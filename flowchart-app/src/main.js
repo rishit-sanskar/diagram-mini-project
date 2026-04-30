@@ -142,6 +142,10 @@ document.getElementById('zoom-in-btn').addEventListener('click', () => {
   canvas.zoom(currentZoom + 0.25);
 });
 
+document.getElementById('zoom-out-btn').addEventListener('click', () => {
+  const currentZoom = canvas.zoom();
+  canvas.zoom(currentZoom - 0.25);
+});
 // --- EXTENSION: Reset Zoom Button ---
 document.getElementById('reset-btn').addEventListener('click', () => {
   canvas.zoom(1.0);
